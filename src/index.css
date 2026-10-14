@@ -113,27 +113,27 @@ button { font-family: inherit; }
 
 .auth-panel-inner {
   width: 100%;
-  max-width: 530px;
+  max-width: 450px;
   background: var(--white);
   border: 1px solid var(--line);
-  border-radius: 20px;
-  padding: 44px 40px;
-  box-shadow: 0 16px 45px rgba(20, 35, 31, 0.12);
+  border-radius: 18px;
+  padding: 32px 28px;
+  box-shadow: 0 14px 38px rgba(20, 35, 31, 0.1);
 }
 
 .auth-panel-heading {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .auth-panel-heading h2 {
-  font-size: 30px;
-  margin-bottom: 8px;
+  font-size: 26px;
+  margin-bottom: 6px;
   letter-spacing: -0.01em;
 }
 
 .auth-panel-heading p {
   font-family: var(--font-body);
-  font-size: 15.5px;
+  font-size: 14px;
   color: var(--muted);
   line-height: 1.5;
 }
@@ -145,8 +145,8 @@ button { font-family: inherit; }
   gap: 8px;
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 16px;
-  padding: 15px 24px;
+  font-size: 15px;
+  padding: 12px 20px;
   border-radius: var(--radius);
   border: 1.5px solid transparent;
   cursor: pointer;
@@ -184,12 +184,12 @@ button { font-family: inherit; }
 .field {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  margin-bottom: 20px;
+  gap: 6px;
+  margin-bottom: 16px;
 }
 
 .field label {
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 600;
   color: var(--ink);
 }
@@ -197,8 +197,8 @@ button { font-family: inherit; }
 .field input,
 .field select {
   font-family: var(--font-body);
-  font-size: 15.5px;
-  padding: 14px 16px;
+  font-size: 14.5px;
+  padding: 11px 14px;
   border: 1.5px solid var(--line);
   border-radius: var(--radius);
   background: var(--white);
@@ -294,10 +294,10 @@ button { font-family: inherit; }
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 3px;
   border: 1.5px solid var(--line);
   border-radius: var(--radius);
-  padding: 16px 18px;
+  padding: 12px 14px;
   cursor: pointer;
   transition: border-color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
 }
@@ -312,22 +312,22 @@ button { font-family: inherit; }
 
 .role-card input[type="radio"] {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 12px;
+  right: 12px;
   margin: 0;
-  width: 16px;
-  height: 16px;
+  width: 15px;
+  height: 15px;
 }
 
 .role-card-title {
-  font-size: 14.5px;
+  font-size: 13.5px;
   font-weight: 700;
   color: var(--ink);
-  padding-right: 22px;
+  padding-right: 20px;
 }
 
 .role-card-sub {
-  font-size: 13px;
+  font-size: 12px;
   color: var(--muted);
 }
 
@@ -807,14 +807,20 @@ button { font-family: inherit; }
   display: flex;
   flex-direction: column;
   gap: 14px;
-  max-width: 460px;
-  margin: auto 0;
-  text-align: left;
+  max-width: 480px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.auth-side-copy .eyebrow {
+  margin: 0 auto;
 }
 
 .auth-side-title {
   font-size: clamp(30px, 4vw, 44px);
   color: var(--white);
+  text-align: center;
 }
 
 .auth-side-tagline {
@@ -822,12 +828,14 @@ button { font-family: inherit; }
   font-size: 15px;
   line-height: 1.6;
   color: #c7d2cc;
+  text-align: center;
 }
 
 .auth-side-tags {
   position: relative;
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .mini-tag {
