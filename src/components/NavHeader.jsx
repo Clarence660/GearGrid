@@ -60,7 +60,7 @@ const handleClickOutside = (e) => {
   return (
     <header className="app-nav">
       <Link to={homePath} className="app-nav-logo">
-        <GearTag size={30} variant="light" showWordmark />
+        <GearTag size={44} variant="light" showWordmark />
       </Link>
       <div className="app-nav-actions">
         <Link
