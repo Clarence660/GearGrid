@@ -161,7 +161,7 @@ export default function LandingPage() {
       <section className="gg-hero-section">
         <div className="gg-hero-content">
           <p className="gg-hero-tagline">
-            Access elite-grade equipment engineered for extreme conditions. Every asset in our grid is lab-tested, structurally verified, and ready for deployment.
+            Access sports equipment for short-term recreation or try before you buy. GearGrid connects sports enthusiasts, athletes, and beginners with peer-verified gear cataloged across categories like Camping, Team Sports, Cycling, and Fitness.
           </p>
 
           <Link to="/dashboard" className="gg-hero-btn">
