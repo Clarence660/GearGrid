@@ -510,7 +510,7 @@ if (!silent) setListingsLoading(true);
           </section>
         )}
 
-        <section className="dashboard-section browse-section">
+        <section className="marketplace-section browse-section">
           <div className="dashboard-section-header browse-header">
             <div>
               <span className="section-kicker">Explore the marketplace</span>

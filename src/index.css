@@ -1710,6 +1710,15 @@ button { font-family: inherit; }
   margin-bottom: 46px;
 }
 
+/* Browse/marketplace section gets a tinted wrap so cards float on it */
+.marketplace-section {
+  margin-bottom: 46px;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(160deg, #f0f7f3 0%, #f7f5ef 100%);
+  border: 1px solid rgba(20, 35, 31, 0.07);
+}
+
 .dashboard-section-header {
   margin-bottom: 18px;
 }
@@ -1726,8 +1735,10 @@ button { font-family: inherit; }
 }
 
 .dashboard-section-title {
-  font-size: 25px;
-  letter-spacing: -0.025em;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--ink);
 }
 
 .browse-header {
@@ -1800,152 +1811,203 @@ button { font-family: inherit; }
 
 /* Listing cards */
 .listing-grid {
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  gap: 22px;
 }
 
 .listing-card {
   min-width: 0;
   padding: 0;
   overflow: hidden;
-  border-radius: 16px;
-  border-color: #ddd7cb;
+  border-radius: 18px;
+  border: 1px solid rgba(20, 35, 31, 0.08);
   background: var(--white);
-  box-shadow: 0 2px 8px rgba(20, 35, 31, 0.06), 0 1px 2px rgba(20, 35, 31, 0.04);
-  transition: border-color 0.2s ease, transform 0.22s ease, box-shadow 0.22s ease;
+  box-shadow:
+    0 2px 4px rgba(20, 35, 31, 0.04),
+    0 6px 18px rgba(20, 35, 31, 0.07);
+  transition: transform 0.24s cubic-bezier(.22,.68,0,1.2), box-shadow 0.24s ease, border-color 0.2s ease;
 }
 
 .listing-card:hover {
-  border-color: #9fbdb4;
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(20, 35, 31, 0.13), 0 4px 8px rgba(20, 35, 31, 0.06);
+  border-color: rgba(27, 75, 63, 0.25);
+  transform: translateY(-8px) scale(1.01);
+  box-shadow:
+    0 4px 8px rgba(20, 35, 31, 0.05),
+    0 20px 48px rgba(20, 35, 31, 0.15);
 }
 
 .listing-card-link {
   gap: 0;
 }
 
+/* Image fills the full card width, no padding */
 .listing-thumb-wrap {
   position: relative;
-  padding: 10px 10px 0;
+  padding: 0;
   overflow: hidden;
 }
 
 .listing-thumb {
-  height: 210px;
-  border-radius: 12px;
-  background-color: var(--chalk);
-  transition: transform 0.4s var(--ease);
+  height: 220px;
+  border-radius: 0;
+  background-color: #d4e4db;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.45s cubic-bezier(.22,.68,0,1.2);
+}
+
+/* Dark gradient at bottom of image so text overlays look clean */
+.listing-thumb-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 40%,
+    rgba(14, 28, 24, 0.45) 100%
+  );
+  pointer-events: none;
+  border-radius: 0;
 }
 
 .listing-card:hover .listing-thumb {
-  transform: scale(1.055);
+  transform: scale(1.07);
 }
 
 .listing-card-topline {
   position: absolute;
-  top: 18px;
-  left: 18px;
-  right: 18px;
+  top: 12px;
+  left: 12px;
+  right: 12px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 6px;
   pointer-events: none;
+  z-index: 2;
 }
 
 .listing-status {
   display: inline-flex;
   align-items: center;
-  min-height: 25px;
-  padding: 5px 8px;
+  min-height: 26px;
+  padding: 4px 10px;
   border-radius: 999px;
   font-family: var(--font-mono);
-  font-size: 9px;
+  font-size: 9.5px;
   font-weight: 800;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  box-shadow: 0 2px 8px rgba(20, 35, 31, 0.12);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.18);
 }
 
 .listing-status-new {
-  background: var(--amber);
-  color: var(--ink);
+  background: #e8a03d;
+  color: #2d1a00;
 }
 
 .listing-status-verified {
-  background: var(--white);
+  background: rgba(255,255,255,0.92);
   color: var(--pine);
-  border: 1px solid #c8ddd3;
+  border: 1px solid rgba(27, 75, 63, 0.2);
+  backdrop-filter: blur(4px);
 }
 
+/* Card body */
 .listing-card-content {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  padding: 15px 16px 17px;
+  gap: 0;
+  padding: 16px 16px 0;
 }
 
 .listing-tags {
-  min-height: 25px;
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  margin-bottom: 10px;
 }
 
 .listing-mode,
 .listing-sport {
-  padding: 5px 8px;
+  padding: 4px 9px;
   border: 0;
-  font-size: 9px;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 6px;
 }
 
 .listing-mode {
-  background: var(--chalk);
-  color: var(--ink);
+  background: #eef5f1;
+  color: #1b4b3f;
 }
 
 .listing-sport {
-  background: var(--sage-wash);
-  color: var(--pine);
+  background: #fdf3e3;
+  color: #8a4e0f;
 }
 
 .listing-name {
-  min-height: 37px;
-  font-size: 15px;
+  font-size: 15.5px;
+  font-weight: 800;
   line-height: 1.25;
+  color: var(--ink);
+  min-height: 0;
+  margin-bottom: 6px;
 }
 
 .listing-price {
-  color: var(--pine);
-  font-size: 17px;
-  font-weight: 800;
-  letter-spacing: -0.02em;
+  color: #1b4b3f;
+  font-size: 19px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
 }
 
 .listing-price sup {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   vertical-align: super;
 }
 
+/* Rating row */
+.listing-rating-line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11.5px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+/* CTA — sits below the content, always visible */
 .listing-view-link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 6px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 700;
-  background: var(--chalk);
-  transition: background 0.2s ease, color 0.2s ease;
+  justify-content: center;
+  gap: 6px;
+  margin: 10px 16px 16px;
+  padding: 11px 16px;
+  border-radius: 10px;
+  color: var(--pine);
+  font-size: 13px;
+  font-weight: 800;
+  background: #eef5f1;
+  border: 1.5px solid #c8ddd3;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.01em;
 }
 
 .listing-card:hover .listing-view-link {
-  background: var(--pine);
+  background: #1b4b3f;
   color: #ffffff;
+  border-color: #1b4b3f;
+  box-shadow: 0 4px 14px rgba(27, 75, 63, 0.35);
 }
 
 .listing-card-actions {
