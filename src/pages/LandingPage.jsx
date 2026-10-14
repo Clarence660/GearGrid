@@ -366,29 +366,29 @@ export default function LandingPage() {
       {/* Rental Guide Section (Clickable) */}
       <section id="rental-guide" className="gg-guide-section">
         <div className="gg-guide-inner">
-          <div className="gg-about-pill-badge">Rental Guide & Protocol</div>
+          <div className="gg-about-pill-badge">Rental Guide</div>
           <div className="gg-guide-grid">
             <Link to="/dashboard" className="gg-guide-step">
-              <div className="gg-guide-step-num">PROTOCOL 01</div>
+              <div className="gg-guide-step-num">01</div>
               <h3 className="gg-guide-step-title">Precision Selection</h3>
               <p className="gg-guide-step-desc">
-                Browse peer-verified gear cataloged with detailed calibration metrics, serial identification, and usage history.
+                Browse peer-verified sports gear cataloged with inclusive daily rental rates, owner specs, and try-to-buy eligibility.
               </p>
             </Link>
 
             <Link to="/dashboard" className="gg-guide-step">
-              <div className="gg-guide-step-num">PROTOCOL 02</div>
-              <h3 className="gg-guide-step-title">Encrypted Meetup Hand-off</h3>
+              <div className="gg-guide-step-num">02</div>
+              <h3 className="gg-guide-step-title">Approved Meetup Hand-off</h3>
               <p className="gg-guide-step-desc">
-                Meet the gear owner in person. When the physical inspection passes, scan the dynamic QR code to securely confirm handoff.
+                Meet the gear owner in person following request approval. Inspect the equipment on-site and confirm the exchange to initiate the rental period.
               </p>
             </Link>
 
             <Link to="/dashboard" className="gg-guide-step">
-              <div className="gg-guide-step-num">PROTOCOL 03</div>
+              <div className="gg-guide-step-num">03</div>
               <h3 className="gg-guide-step-title">Verified Return & Escrow</h3>
               <p className="gg-guide-step-desc">
-                Return the gear seamlessly. Both parties confirm condition and ratings, releasing payments smoothly through the grid.
+                Return the gear seamlessly at the end of your rental window. Complete condition checks and finalize payments securely through the grid.
               </p>
             </Link>
           </div>
@@ -420,7 +420,7 @@ export default function LandingPage() {
         <div className="gg-footer-links">
           <button type="button" onClick={() => scrollTo("about")} className="gg-footer-link">Technical Support</button>
           <button type="button" onClick={() => scrollTo("rental-guide")} className="gg-footer-link">Rental Agreement</button>
-          <button type="button" onClick={() => scrollTo("about")} className="gg-footer-link">Privacy Protocol</button>
+          <button type="button" onClick={() => scrollTo("about")} className="gg-footer-link">Privacy Policy</button>
           <button type="button" onClick={() => scrollTo("explore")} className="gg-footer-link">System Status</button>
         </div>
 
