@@ -6,9 +6,30 @@ export default function AuthLayout({ eyebrow, title, tagline, children }) {
     <div className="auth-split-shell">
       <aside className="auth-side">
         <div className="auth-side-grid" aria-hidden="true" />
-        <Link to="/" className="auth-side-logo">
-          <GearTag size={36} variant="dark" showWordmark />
-        </Link>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "100%", zIndex: 10, position: "relative" }}>
+          <Link to="/" className="auth-side-logo" title="Back to Home">
+            <GearTag size={52} variant="dark" showWordmark />
+          </Link>
+          <Link
+            to="/"
+            style={{
+              color: "#86efac",
+              fontSize: "13px",
+              fontWeight: "700",
+              textDecoration: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "6px",
+              background: "rgba(34, 197, 94, 0.12)",
+              padding: "6px 14px",
+              borderRadius: "20px",
+              border: "1px solid rgba(74, 222, 128, 0.3)",
+              transition: "all 0.2s ease",
+            }}
+          >
+            ← Home
+          </Link>
+        </div>
 
         <div className="auth-side-copy">
           <span className="eyebrow">{eyebrow}</span>
