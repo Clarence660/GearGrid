@@ -7,8 +7,8 @@ export default function AuthLayout({ eyebrow, title, tagline, children }) {
       <aside className="auth-side">
         <div className="auth-side-grid" aria-hidden="true" />
         <div className="auth-side-copy">
-          <Link to="/" className="auth-side-logo" title="GearGrid Home" style={{ marginBottom: "28px" }}>
-            <GearTag size={56} variant="dark" showWordmark />
+          <Link to="/" className="auth-side-logo" title="GearGrid Home" style={{ margin: "16px 0 34px", display: "inline-block" }}>
+            <GearTag size={68} variant="dark" showWordmark />
           </Link>
           <span className="eyebrow">{eyebrow}</span>
           <h1 className="auth-side-title">{title}</h1>
