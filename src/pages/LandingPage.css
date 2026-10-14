@@ -221,13 +221,13 @@
 .gg-hero-section {
   position: relative;
   z-index: 1;
-  max-width: 1360px;
-  min-height: calc(100vh - 120px);
+  max-width: 1560px;
+  min-height: calc(100vh - 100px);
   margin: 0 auto;
-  padding: 60px 48px 100px;
+  padding: 80px 56px 120px;
   display: grid;
-  grid-template-columns: 1fr 1.25fr;
-  gap: 64px;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 72px;
   align-items: center;
 }
 
@@ -243,16 +243,16 @@
 .gg-hero-content {
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  margin-top: 36px;
+  gap: 32px;
+  margin-top: 24px;
 }
 
 .gg-hero-tagline {
-  font-size: 16.5px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.65;
   color: #cbd5e1;
   font-weight: 400;
-  max-width: 520px;
+  max-width: 580px;
   margin: 0;
 }
 
@@ -330,17 +330,17 @@
   position: relative;
   background: rgba(8, 22, 15, 0.75);
   border: 1px solid rgba(74, 222, 128, 0.28);
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.78), inset 0 0 50px rgba(34, 197, 94, 0.08);
-  min-height: 530px;
-  max-width: 720px;
+  box-shadow: 0 32px 85px rgba(0, 0, 0, 0.82), inset 0 0 60px rgba(34, 197, 94, 0.1);
+  min-height: 640px;
+  max-width: 860px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 36px;
   margin: 0 auto;
 }
 
