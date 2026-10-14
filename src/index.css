@@ -841,23 +841,13 @@ button { font-family: inherit; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  animation: logoFloat 4s ease-in-out infinite;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.25s ease, filter 0.25s ease;
   z-index: 5;
 }
 
 .auth-side-logo:hover {
-  transform: translateY(-4px) scale(1.05);
+  transform: scale(1.04);
   filter: drop-shadow(0 0 20px rgba(74, 222, 128, 0.6));
-}
-
-@keyframes logoFloat {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-9px);
-  }
 }
 
 .auth-side-copy {
@@ -865,28 +855,37 @@ button { font-family: inherit; }
   display: flex;
   flex-direction: column;
   gap: 14px;
+  width: 100%;
   max-width: 480px;
   margin: auto;
   text-align: center;
   align-items: center;
+  justify-content: center;
 }
 
 .auth-side-copy .eyebrow {
+  display: block;
+  width: 100%;
+  text-align: center;
   margin: 0 auto;
 }
 
 .auth-side-title {
+  width: 100%;
   font-size: clamp(30px, 4vw, 44px);
   color: var(--white);
   text-align: center;
+  margin: 0 auto;
 }
 
 .auth-side-tagline {
+  width: 100%;
   font-family: var(--font-body);
   font-size: 15px;
   line-height: 1.6;
   color: #c7d2cc;
   text-align: center;
+  margin: 0 auto;
 }
 
 .auth-side-tags {
