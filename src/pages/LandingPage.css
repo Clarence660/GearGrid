@@ -223,33 +223,33 @@
   z-index: 1;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 70px 32px 100px;
+  padding: 40px 32px 60px;
   display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  gap: 60px;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 48px;
   align-items: center;
 }
 
 @media (max-width: 990px) {
   .gg-hero-section {
     grid-template-columns: 1fr;
-    padding: 40px 20px 60px;
-    gap: 40px;
+    padding: 30px 20px 48px;
+    gap: 32px;
   }
 }
 
 .gg-hero-content {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 22px;
 }
 
 .gg-hero-tagline {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 14.5px;
+  line-height: 1.5;
   color: #cbd5e1;
   font-weight: 400;
-  max-width: 490px;
+  max-width: 440px;
   margin: 0;
 }
 
@@ -329,13 +329,16 @@
   border: 1px solid rgba(74, 222, 128, 0.28);
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7), inset 0 0 50px rgba(34, 197, 94, 0.08);
-  min-height: 480px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), inset 0 0 40px rgba(34, 197, 94, 0.08);
+  min-height: 360px;
+  max-width: 560px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 18px;
+  margin: 0 auto;
 }
 
 /* Moving Radar Scanline over HUD */
