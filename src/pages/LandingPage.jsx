@@ -270,11 +270,11 @@ export default function LandingPage() {
           <div className="gg-about-pill-badge">About Platform</div>
 
           <h2 className="gg-about-headline">
-            GearGrid delivers <span className="highlight-green">professional performance</span> to your <em>pursuit</em>, balancing <span className="highlight-green">technical precision</span> with everyday athletic ambition.
+            GearGrid connects <span className="highlight-green">sports enthusiasts</span> to <em>needed gear</em>, balancing <span className="highlight-green">accessible rentals</span> with flexible try-to-buy ownership.
           </h2>
 
           <p className="gg-about-subtext">
-            We engineer a seamless marketplace bridging the gap between <span>elite sporting equipment</span> and everyday athletic ambition. We do not merely rent equipment; we distribute verified performance capability.
+            We provide a peer-to-peer marketplace bridging the gap between <span>quality sports equipment</span> and everyday athletic ambition. We do not merely rent gear; we deliver verified equipment access for short-term recreation or seamless purchase.
           </p>
 
           <div className="gg-about-badges-row">
